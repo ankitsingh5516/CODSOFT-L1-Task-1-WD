@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #d8cfcf;
+    color: #ec2626;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 60px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 20PX;
+    border-radius: 30PX;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 40px;
+    padding: 15PX;
+    background-color: #12e390;
+    border-radius: 30PX;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0d0f27;
+    font-weight: bold;
+}
+
+aside address {
+    text-align: center;
+    background-color: #aca8a8;
+    text-emphasis-style: rgb(222, 96, 96);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links a {
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.social-links img {
+    width: 32px;
+    height: 32px;
+}
+
+#logo {
+    margin: 10px 10px;
+    .box {
+        border: #401111 3px;
+    }
+}
+
+.h-primary {
+    font-size: 3.8rem;
+    color: rgb(9, 32, 238);
+    border-bottom: 1px double rgb(132, 7, 228);
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+    font-style: italic;
+}
+
+main {
+    padding: 20px;
+}
+
+.products {
+    flex: 3;
+    display: flexbox;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-block: 30PX;
+}
+
+.product-card {
+    border: 5px solid #5a79e9;
+    display: inline-block;
+    padding: 20px;
+    width: 250px;
+    margin: 20px;
+}
+
+.products-card img {
+    max-width: 50%;
+}
+
+.cart {
+    bottom: 3px solid #e40606;
+    flex: 1;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    padding: 20px;
+    background-color: #b57575;
+}
+
+.cart button {
+    width: 20%;
+    padding: 10px;
+    background-color: #333;
+    color: #f5f0f0;
+    border: none;
+    cursor: pointer;
+}
+
+.products {
+    border: 3px solid #401111;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+.products img {
+    max-width: 50%;
+}
+
+#services {
+    flex-direction: row;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 10px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: #f2f2f2;
+}
+
+#services .box img {
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p {
+    font-family: 'Bree Serif', serif;
+}
+
+.center {
+    text-align: center;
+}
+
+#services h2 {
+    color: rgb(9, 139, 238);
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+#services p {
+    color: rgb(17, 28, 126);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#deals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#deals-item {
+    padding: 20px;
+}
+
+#deals img {
+    height: 100px;
+    margin: 3PX 6PX;
+    display: block;
+}
+
+#contact {
+    position: relative
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.center {
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
