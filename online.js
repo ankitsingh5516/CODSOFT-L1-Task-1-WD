@@ -57,13 +57,10 @@ const products = [{
         price: 2200.00,
         image: "product2.jpg",
     },
-    // Add more products here
-];
 
-// Initialize cart
+];
 const cart = [];
 
-// Function to display products
 function displayProducts() {
     const productsContainer = document.querySelector(".products");
 
@@ -80,11 +77,9 @@ function displayProducts() {
     });
 }
 
-// Function to update the cart
 function updateCart() {
     const cartItems = document.getElementById("cart-items");
     const cartTotal = document.getElementById("cart-total");
-
     cartItems.innerHTML = "";
     let total = 0;
 
@@ -94,11 +89,8 @@ function updateCart() {
         cartItems.appendChild(cartItem);
         total += item.price;
     });
-
     cartTotal.textContent = total.toFixed(2);
 }
-
-// Event listener for adding items to the cart
 document.addEventListener("click", event => {
     if (event.target.classList.contains("add-to-cart")) {
         const productId = parseInt(event.target.getAttribute("data-id"));
@@ -109,23 +101,17 @@ document.addEventListener("click", event => {
         }
     }
 });
-
-// Event listener for checkout button
 const checkoutButton = document.getElementById("checkout");
 checkoutButton.addEventListener("click", () => {
     alert("Thank you for your purchase!");
-    cart.length = 0; // Clear the cart
+    cart.length = 0;
     updateCart();
 });
-
-// Initialize the website
 displayProducts();
-// JavaScript code can be added here to enhance interactivity.
 
-// Example JavaScript for Google Maps integration
 function initMap() {
     const map = new google.maps.Map(document.getElementById('google-map'), {
-        center: { lat: 28.61255, lng: 77.48963 }, // Set your coordinates
+        center: { lat: 28.61255, lng: 77.48963 },
         zoom: 15,
     });
 }
